@@ -1,54 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reto 3 Mintic 2022
-    </title>
+ <meta charset="UFT-8">
+ <title>Reto2</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script type="text/javascript" src="js/misFunciones.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css">
-        <script src="funciones.js"></script>
-    
 </head>
-
 <body>
-    <div class="disfraces">
-        <h2>Disfraces</h2>
-        <div id="estatusDisfraz"></div>
-        <button onclick="getDisfraz()">Consultar Disfraz</button>
-        <input type="text" placeholder="ID" id="id">
-        <input type="text" placeholder="Brand" id="brand">
-        <input type="text" placeholder="Modelo" id="model">
-        <input type="text" placeholder="Categoría" id="category_id">
-        <input type="text" placeholder="Nombre" id="name">
-        <button onclick="saveDisfraz()">Guardar Disfraz</button>
-        <button onclick="editDisfraz()">Actualizar Disfraz</button>
-    </div>
-    
-    <div class="clientes">
-        <h2>Clientes</h2>
-        <div id="estatusCliente"></div>
-        <button onclick="getCliente()">Consultar Cliente</button>
-        <input type="text" placeholder="ID" id="idCliente">
-        <input type="text" placeholder="Cliente" id="nameCliente">
-        <input type="text" placeholder="Email" id="emailCliente">
-        <input type="text" placeholder="Edad" id="ageCliente">
-        <button onclick="saveCliente()">Guardar Cliente</button>
-        <button onclick="editCliente()">Actualizar Cliente</button>
-    </div>
-    
-    <div class="mensajes">
-        <h2>Mensajes</h2>
-        <div id="estatusMensaje"></div>
-        <button onclick="getMensaje()">Consultar Mensaje</button>
-        <input type="text" placeholder="ID" id="idMensaje">
-        <input type="text" placeholder="Texto del Mensaje" id="messagetext">
-        <button onclick="saveMensaje()">Guardar Mensaje</button>
-        <button onclick="editMensaje()">Actualizar Mensaje</button>
-    </div>
+    <h1>Costume</h1>
+    <div id="resultado"></div> 
+    <button onclick="traerInformacion()">Consultar</button>
+    <div>
+        <input type="number" id="id" placeholder="id">
+        <input type="text" id="name" placeholder="name">
+        <input type="text" id="brand" placeholder="brand">
+        <input type="number" id="model" placeholder="model">
+        <input type="number" id="category_id" placeholder="category_id">
+       </div>
+       
+       <button onclick="guardarInformacion()">Guardar!</button>
+       <button onclick="editarInformacion()">Actualizar!</button>
+
+
+ 
+<body>
+ 
+
+<h1>Client</h1>
+<div id="resultadoClie"></div> 
+<button onclick="traerInformacionClie()">Consultar</button>
+<div>
+    <input type="number" id="idcliente" placeholder="id">
+    <input type="text" id="namecliente" placeholder="name">
+    <input type="text" id="email" placeholder="email">
+    <input type="number" id="age" placeholder="age">
+   
+</div>
+   
+   <button onclick="guardarInformacionClie()">Guardar!</button>
+   <button onclick="editarInformacionClie()">Actualizar!</button>  
+
+<h1>Message</h1>
+<div id="resultadoMess"></div> 
+<button onclick="traerInformacionMess()">Consultar</button>
+<div>
+    <input type="text" id="messagetextmessage" placeholder="messagetext">
+    <input type="number" id="idmessage" placeholder="id">
+   
+   
+</div>
+   
+   <button onclick="guardarInformacionMess()">Guardar!</button>
+   <button onclick="editarInformacionMess()">Actualizar!</button> 
+
+
+
 </body>
 </html>
